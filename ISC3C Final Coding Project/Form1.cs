@@ -23,7 +23,7 @@ namespace ISC3C_Final_Coding_Project
         private void startButton_Click(object sender, EventArgs e)
         {
             //hides Form1 (the instructions) and reveals the game itself in Form2
-            Form2 form2 = new Form2();
+            Form2 form2 = new Form2(this);
             form2.Show();
             this.Hide();
         }

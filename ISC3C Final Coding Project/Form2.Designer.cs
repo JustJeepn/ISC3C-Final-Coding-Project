@@ -28,25 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             returnButton = new Button();
             SuspendLayout();
             // 
             // returnButton
             // 
             returnButton.BackColor = Color.FromArgb(128, 255, 128);
-            returnButton.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            returnButton.Font = new Font("Arial Rounded MT Bold", 6.6F);
             returnButton.Location = new Point(12, 12);
             returnButton.Name = "returnButton";
-            returnButton.Size = new Size(145, 78);
+            returnButton.Size = new Size(123, 58);
             returnButton.TabIndex = 1;
             returnButton.Text = "CLICK ME TO RETURN TO INSTRUCTION PAGE";
             returnButton.UseVisualStyleBackColor = false;
+            returnButton.Click += returnButton_Click;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(963, 866);
             Controls.Add(returnButton);
             Name = "Form2";
             Text = "Form2";
