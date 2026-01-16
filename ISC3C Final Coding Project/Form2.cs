@@ -19,5 +19,58 @@
             form1.Show();
             this.Close();
         }
+
+        private void runButton_Click(object sender, EventArgs e)
+        {
+            blueButton.BackColor = Color.Blue;
+            Refresh();
+            Thread.Sleep(500);
+
+            blueButton.BackColor = Color.DodgerBlue;
+            Refresh();
+            Thread.Sleep(500);
+
+            greenButton.BackColor = Color.Lime;
+            Refresh();
+            Thread.Sleep(500);
+
+            greenButton.BackColor = Color.Green;
+            Refresh();
+            Thread.Sleep(500);
+
+            redButton.BackColor = Color.Red;
+            Refresh();
+            Thread.Sleep(500);
+
+            redButton.BackColor = Color.Maroon;
+            Refresh();
+            Thread.Sleep(500);
+
+            redButton.BackColor = Color.Red;
+            Refresh();
+            Thread.Sleep(500);
+
+            redButton.BackColor = Color.Maroon;
+            Refresh();
+            Thread.Sleep(500);
+
+            yellowButton.BackColor = Color.Yellow;
+            Refresh();
+            Thread.Sleep(500);
+
+            yellowButton.BackColor = Color.Goldenrod;
+            Refresh();
+            Thread.Sleep(500);
+        }
+
+        private void blueButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void redButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -43,7 +43,7 @@
             startButton.Name = "startButton";
             startButton.Size = new Size(278, 107);
             startButton.TabIndex = 0;
-            startButton.Text = "CLICK ME TO START GAME!";
+            startButton.Text = "CLICK ME TO GO TO THE GAME!";
             startButton.UseVisualStyleBackColor = false;
             startButton.Click += startButton_Click;
             // 
@@ -83,6 +83,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(864, 851);
             Controls.Add(label3);
