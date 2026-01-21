@@ -1,7 +1,15 @@
-﻿namespace ISC3C_Final_Coding_Project
+﻿
+using System.Diagnostics.Eventing.Reader;
+
+namespace ISC3C_Final_Coding_Project
 {
     public partial class Form2 : Form
     {
+        Boolean Blue = false;
+        Boolean Green = false;
+        Boolean Red1 = false;
+        Boolean Red2 = false;
+        Boolean Yellow = false;
         private Form1 form1;
         public Form2(Form1 form1)
         {
@@ -65,7 +73,9 @@
 
         private void blueButton_Click(object sender, EventArgs e)
         {
-
+            if (Blue == false && Green == false && Red1 == false && Red2 == false && Yellow == false);
+            Blue = true;
+            else outputLabel.text = "Try again!";
         }
 
         private void redButton_Click(object sender, EventArgs e)

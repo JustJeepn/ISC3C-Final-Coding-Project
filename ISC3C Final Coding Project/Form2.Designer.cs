@@ -35,6 +35,7 @@
             redButton = new Button();
             greenButton = new Button();
             yellowButton = new Button();
+            outputLabel = new Label();
             SuspendLayout();
             // 
             // returnButton
@@ -107,12 +108,21 @@
             yellowButton.TabIndex = 9;
             yellowButton.UseVisualStyleBackColor = false;
             // 
+            // outputLabel
+            // 
+            outputLabel.Location = new Point(500, 69);
+            outputLabel.Name = "outputLabel";
+            outputLabel.Size = new Size(62, 25);
+            outputLabel.TabIndex = 10;
+            outputLabel.Text = "label1";
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(963, 866);
+            Controls.Add(outputLabel);
             Controls.Add(yellowButton);
             Controls.Add(greenButton);
             Controls.Add(redButton);
@@ -136,5 +146,6 @@
         private Button redButton;
         private Button greenButton;
         private Button yellowButton;
+        private Label outputLabel;
     }
 }
