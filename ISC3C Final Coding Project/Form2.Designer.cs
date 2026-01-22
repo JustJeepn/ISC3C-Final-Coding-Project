@@ -74,6 +74,9 @@
             // blueButton
             // 
             blueButton.BackColor = Color.DodgerBlue;
+            blueButton.Cursor = Cursors.Hand;
+            blueButton.FlatAppearance.BorderColor = Color.Black;
+            blueButton.FlatAppearance.BorderSize = 0;
             blueButton.Location = new Point(313, 451);
             blueButton.Name = "blueButton";
             blueButton.Size = new Size(150, 150);
@@ -83,6 +86,9 @@
             // redButton
             // 
             redButton.BackColor = Color.Maroon;
+            redButton.Cursor = Cursors.Hand;
+            redButton.FlatAppearance.BorderColor = Color.Black;
+            redButton.FlatAppearance.BorderSize = 0;
             redButton.Location = new Point(313, 264);
             redButton.Name = "redButton";
             redButton.Size = new Size(150, 150);
@@ -93,6 +99,9 @@
             // greenButton
             // 
             greenButton.BackColor = Color.Green;
+            greenButton.Cursor = Cursors.Hand;
+            greenButton.FlatAppearance.BorderColor = Color.Black;
+            greenButton.FlatAppearance.BorderSize = 0;
             greenButton.Location = new Point(500, 264);
             greenButton.Name = "greenButton";
             greenButton.Size = new Size(150, 150);
@@ -102,19 +111,26 @@
             // yellowButton
             // 
             yellowButton.BackColor = Color.Goldenrod;
+            yellowButton.Cursor = Cursors.Hand;
+            yellowButton.FlatAppearance.BorderColor = Color.Black;
+            yellowButton.FlatAppearance.BorderSize = 0;
             yellowButton.Location = new Point(500, 451);
             yellowButton.Name = "yellowButton";
             yellowButton.Size = new Size(150, 150);
             yellowButton.TabIndex = 9;
             yellowButton.UseVisualStyleBackColor = false;
+            yellowButton.Click += yellowButton_Click;
             // 
             // outputLabel
             // 
-            outputLabel.Location = new Point(500, 69);
+            outputLabel.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            outputLabel.ForeColor = Color.Red;
+            outputLabel.Location = new Point(409, 28);
             outputLabel.Name = "outputLabel";
-            outputLabel.Size = new Size(62, 25);
+            outputLabel.Size = new Size(147, 81);
             outputLabel.TabIndex = 10;
-            outputLabel.Text = "label1";
+            outputLabel.TextAlign = ContentAlignment.MiddleCenter;
+            outputLabel.Click += outputLabel_Click;
             // 
             // Form2
             // 
