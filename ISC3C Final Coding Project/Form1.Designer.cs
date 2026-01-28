@@ -92,7 +92,7 @@
             Controls.Add(startButton);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            Text = "Form1";
+            Text = "Instructions";
             Load += Form1_Load;
             Paint += Form1_Paint;
             ResumeLayout(false);

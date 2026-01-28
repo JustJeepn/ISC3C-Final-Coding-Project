@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             returnButton = new Button();
             runButton = new Button();
             label2 = new Label();
@@ -136,7 +137,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DimGray;
+            BackColor = Color.White;
             ClientSize = new Size(963, 866);
             Controls.Add(outputLabel);
             Controls.Add(yellowButton);
@@ -146,8 +147,9 @@
             Controls.Add(label2);
             Controls.Add(runButton);
             Controls.Add(returnButton);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form2";
-            Text = "Form2";
+            Text = "Game";
             Load += Form2_Load;
             ResumeLayout(false);
         }
